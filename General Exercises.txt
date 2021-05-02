@@ -1,0 +1,48 @@
+General Exercises
+
+1 - Assess your knowledge level on the following languages (1 = none; 5 = expert):
+
+0 - Vanilla JS
+0 - jQuery
+3 - HTML/HTML5
+3 - CSS/CSS3
+0 - Ajax
+3 - AngularJS
+0 - Bootstrap
+
+
+2 - What is the width of a container with 100px of width and 5px of padding?
+105px
+
+
+3 - How to apply a click event to all paragraphs except for the last?
+We can create a div with the paragraphs we want to apply a click event e put onClick and put in it. The last one could be stay out of the div.
+
+<div onclick="Teste()">
+  <p id="A" >A</p>
+  <p id="B" onclick="myFunction()">B</p>
+  <p id="C" onclick="myFunction()">C</p>
+</div>
+
+<script>
+	function Teste() {
+	  document.getElementById("A").innerHTML = "1";
+	  document.getElementById("B").innerHTML = "2";
+	  document.getElementById("C").innerHTML = "3";
+	}
+</script>
+
+
+4 - Why does the alert show "Jack" first and then undefined?
+
+function identity() {
+    var name = 'Jack';
+    alert(name);
+    return
+    name
+};
+
+var who = identity();
+alert(who)
+
+Because the scope of the variable name is valid in the function in which it was created, in spite of the return.

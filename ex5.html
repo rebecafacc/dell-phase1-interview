@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="ex5" />
+    <title>Exercise 5</title>
+    <script type="text/javascript">
+      function incluiTitulo() {
+        var all = [];
+        var titulos = document.getElementsByClassName("titulo");
+        var list1 = document.getElementsByClassName("items1");
+        var list2 = document.getElementsByClassName("items2");
+        var list3 = document.getElementsByClassName("items3");
+        var list4 = document.getElementsByClassName("items4");
+        var list5 = document.getElementsByClassName("items5");
+        var list6 = document.getElementsByClassName("items6");
+        var list7 = document.getElementsByClassName("items7");
+
+        all.push(list1);
+        all.push(list2);
+        all.push(list3);
+        all.push(list4);
+        all.push(list5);
+        all.push(list6);
+        all.push(list7);
+
+        for (let index = 0; index < all.length; index++) {
+          const items = all[index];
+          let titulo = titulos[index].innerHTML;
+
+          titulo =
+            titulo.substring(0, titulo.indexOf(" ") + 1).length > 0
+              ? titulo.substring(0, titulo.indexOf(" ") + 1)
+              : titulo;
+
+          for (let i = 0; i < items.length; i++) {
+            const item = titulo + " - " + items[i].innerHTML;
+            items[i].textContent = item;
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body onload="incluiTitulo()">
+    <!-- Laptops -->
+    <h5>
+      <a class="titulo" href="/en-us/member/shop/dell-laptops/sc/laptops"
+        >Laptops</a
+      >
+    </h5>
+    <ul id="listaLaptops">
+      <li>
+        <a
+          class="items1"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/xps-laptops"
+          >XPS Laptops &amp; 2-in-1 PCs</a
+        >
+      </li>
+      <li>
+        <a
+          class="items1"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/inspiron-laptops"
+          >Inspiron Laptops &amp; 2-in-1 PCs</a
+        >
+      </li>
+      <li>
+        <a
+          class="items1"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/alienware-laptops"
+          >Alienware Gaming Laptops</a
+        >
+      </li>
+      <li>
+        <a
+          class="items1"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/g-series"
+          >G Series Gaming Laptops</a
+        >
+      </li>
+      <li>
+        <a class="items1" href="#">View All</a>
+      </li>
+    </ul>
+
+    <!-- DeskComputers -->
+    <h5>
+      <a class="titulo" href="/en-us/member/shop/dell-laptops/sc/laptops"
+        >Desk Computers</a
+      >
+    </h5>
+    <ul id="listaDeskComputers">
+      <li>
+        <a
+          class="items2"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/xps-laptops"
+          >XPS Desktops</a
+        >
+      </li>
+      <li>
+        <a
+          class="items2"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/inspiron-laptops"
+          >Inspiron Desktops & All-in-Ones</a
+        >
+      </li>
+      <li>
+        <a
+          class="items2"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/alienware-laptops"
+          >Alienware Gaming Desktops</a
+        >
+      </li>
+      <li>
+        <a
+          class="items2"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/g-series"
+          >G Series Gaming Desktops</a
+        >
+      </li>
+    </ul>
+
+    <!-- Computer Deals & Electronics on Sale -->
+    <h5>
+      <a class="titulo" href="/en-us/member/shop/dell-laptops/sc/laptops"
+        >Computer Deals & Electronics on Sale</a
+      >
+    </h5>
+    <ul id="listaLaptops">
+      <li>
+        <a
+          class="items3"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/xps-laptops"
+          >Laptop Deals</a
+        >
+      </li>
+      <li>
+        <a
+          class="items3"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/inspiron-laptops"
+          >Desktop Deals</a
+        >
+      </li>
+      <li>
+        <a
+          class="items3"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/alienware-laptops"
+          >Alienware Gaming Laptops</a
+        >
+      </li>
+      <li>
+        <a
+          class="items3"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/g-series"
+          >Gaming PC Deals</a
+        >
+      </li>
+    </ul>
+
+    <!-- 2-in-1 Laptops -->
+    <h5>
+      <a class="titulo" href="/en-us/member/shop/dell-laptops/sc/laptops"
+        >2-in-1 Laptops</a
+      >
+    </h5>
+    <ul id="listaLaptops">
+      <li>
+        <a
+          class="items4"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/xps-laptops"
+          >Inspiron 2-in-1 Laptops</a
+        >
+      </li>
+      <li>
+        <a
+          class="items4"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/inspiron-laptops"
+          >XPS 2-in-1 Laptops</a
+        >
+      </li>
+      <li>
+        <a
+          class="items4"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/alienware-laptops"
+          >Dell Chromebooks</a
+        >
+      </li>
+    </ul>
+
+    <!-- Gaming Laptops -->
+    <h5>
+      <a class="titulo" href="/en-us/member/shop/dell-laptops/sc/laptops"
+        >Gaming Laptops</a
+      >
+    </h5>
+    <ul id="listaLaptops">
+      <li>
+        <a
+          class="items5"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/xps-laptops"
+          >Alienware Gaming Laptops</a
+        >
+      </li>
+      <li>
+        <a
+          class="items5"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/inspiron-laptops"
+          >G Series Gaming Laptops</a
+        >
+      </li>
+    </ul>
+
+    <!-- Gaming PCs -->
+    <h5>
+      <a class="titulo" href="/en-us/member/shop/dell-laptops/sc/laptops"
+        >Gaming PCs</a
+      >
+    </h5>
+    <ul id="listaLaptops">
+      <li>
+        <a
+          class="items6"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/xps-laptops"
+          >Alienware Gaming Desktops</a
+        >
+      </li>
+      <li>
+        <a
+          class="items6"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/inspiron-laptops"
+          >G Series Gaming Desktops</a
+        >
+      </li>
+    </ul>
+
+    <!-- Electronics & Accessories -->
+    <h5>
+      <a class="titulo" href="/en-us/member/shop/dell-laptops/sc/laptops"
+        >Electronics & Accessories</a
+      >
+    </h5>
+    <ul id="listaLaptops">
+      <li>
+        <a
+          class="items7"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/xps-laptops"
+          >Monitors & Monitor Accessories</a
+        >
+      </li>
+      <li>
+        <a
+          class="items7"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/inspiron-laptops"
+          >Audio</a
+        >
+      </li>
+      <li>
+        <a
+          class="items7"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/inspiron-laptops"
+          >Home Theater</a
+        >
+      </li>
+      <li>
+        <a
+          class="items7"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/inspiron-laptops"
+          >Docks and Stands</a
+        >
+      </li>
+      <li>
+        <a
+          class="items7"
+          href="/en-us/member/shop/dell-laptops/sr/laptops/inspiron-laptops"
+          >View All</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>

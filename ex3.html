@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="ex3" />
+    <title>Exercise 3</title>
+      <script type="text/javascript">
+
+      function moverImg(){
+        var img1 = document.getElementById("imagem1");
+        var img2 = document.getElementById("imagem2");
+        var botao = document.getElementById("botao");
+
+        img1.style.display = "block";
+        img2.style.display = "none";
+
+        botao.addEventListener("click", function() {
+          if (img1.style.display === "none") {
+            img1.style.display = "block";
+          } else {
+            img1.style.display = "none";
+          }
+         
+          if (img2.style.display === "block") {
+            img2.style.display = "none";
+          } else {
+            img2.style.display = "block";
+          }
+        });
+        console.log('imagem1', img1);
+        console.log('imagem2', img2);
+        console.log('botao', botao);
+      }
+      </script>
+  </head>
+
+  <body onload="moverImg()">
+    <div id="imagem1">
+      <img src="259.png" ></img>
+    </div>
+    
+    <br>
+    <br>
+    
+    <button id="botao">Mover imagem</button>
+
+    <div id="s1">
+      <h5>Crie uma base para a inovação digital mais rápida</h5>
+      <p>Estamos em uma época de mudanças rápidas e contínuas, mas isso possibilita a 
+        evolução e adaptação. Você pode oferecer novos produtos digitais por meio do 
+        fortalecimento de competência interna em dados e software. Você pode obter recursos 
+        adaptáveis essenciais, chegar a um mercado mais rápido e de maneira mais consistente, 
+        tudo isso ao mesmo tempo que otimiza cargas de trabalho e se protege contra ameaças 
+        cibernéticas.</p>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="imagem2"">
+      <img src="259.png" ></img>
+    </div>
+    <br>
+    <br>
+
+    <div id="s2">
+      <h5>Crie exatamente o que os clientes desejam</h5>
+      <p>Ajudamos você a dominar o desenvolvimento de produtos digitais modernos como uma 
+        competência principal. Você poderá gerar e coletar mais dados de alto valor e desbloquear 
+        seu valor. Você também poderá oferecer software com um processo de desenvolvimento ágil, 
+        rápido e interativo para se integrar melhor a clientes, parceiros e fornecedores.</p>
+    </div>
+  </body>
+</html>
